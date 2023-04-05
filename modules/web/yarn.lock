@@ -3177,14 +3177,13 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swimlane/ngx-charts@npm:20.1.0":
-  version: 20.1.0
-  resolution: "@swimlane/ngx-charts@npm:20.1.0"
+"@swimlane/ngx-charts@npm:20.1.2":
+  version: 20.1.2
+  resolution: "@swimlane/ngx-charts@npm:20.1.2"
   dependencies:
-    "@types/d3-shape": ^2.0.0
     d3-array: ^2.9.1
     d3-brush: ^2.1.0
-    d3-color: ^2.0.0
+    d3-color: ^3.1.0
     d3-format: ^2.0.0
     d3-hierarchy: ^2.0.0
     d3-interpolate: ^2.0.1
@@ -3193,6 +3192,7 @@ __metadata:
     d3-shape: ^2.0.0
     d3-time-format: ^3.0.0
     d3-transition: ^2.0.0
+    rfdc: ^1.3.0
     tslib: ^2.0.0
   peerDependencies:
     "@angular/animations": ">=12.0.0"
@@ -3203,7 +3203,7 @@ __metadata:
     "@angular/platform-browser": ">=12.0.0"
     "@angular/platform-browser-dynamic": ">=12.0.0"
     rxjs: ^6.5.3 || ^7.4.0
-  checksum: 7f4ce8c86f4a4c3679f7455f6f1081a926e1fc45bf244f4665649d007ab7c1e972fac25a5eee1d0d83aca5d213dafd8d6c1e3853975ad13dbf1cfa162e0cd7ed
+  checksum: c03c12c70b99118a5cd2f67e02a1e802e6151e0629b5822017af36931a573d823396de918218d7a8c20abf18b1844c436709f01d3a878c5931e06151a540caf3
   languageName: node
   linkType: hard
 
@@ -3462,13 +3462,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/d3-path@npm:^2":
-  version: 2.0.2
-  resolution: "@types/d3-path@npm:2.0.2"
-  checksum: 2ab49cc87b9d2cb90c189bedf5f0fdc2b1609c3c668664dc76c679054b4bb1bcfaf44e7836e1f7d0b38102cecc269a6c52a353e0ba238c992509cb0e9d6c5c33
-  languageName: node
-  linkType: hard
-
 "@types/d3-polygon@npm:*":
   version: 3.0.0
   resolution: "@types/d3-polygon@npm:3.0.0"
@@ -3519,15 +3512,6 @@ __metadata:
   dependencies:
     "@types/d3-path": "*"
   checksum: 19d43b9762cbff503806d014be1b8a5d22dd12c71635f1f0b30696d3b3b31528b978175afe2ba183542fd16e4fc740f56e7a84100ead00f7d95eaeb890ac8b78
-  languageName: node
-  linkType: hard
-
-"@types/d3-shape@npm:^2.0.0":
-  version: 2.1.3
-  resolution: "@types/d3-shape@npm:2.1.3"
-  dependencies:
-    "@types/d3-path": ^2
-  checksum: d0855a1e2c11a4ab23367c86ef0cc104e12bf216f2c007fa5955da7179b60b0426d0e9ddbbbdf93d4342e7dd24c7bcfc3a2bc6258744e03fc44ca460a063dcc3
   languageName: node
   linkType: hard
 
@@ -6254,10 +6238,17 @@ __metadata:
   languageName: node
   linkType: hard
 
-"d3-color@npm:1 - 2, d3-color@npm:^2.0.0":
+"d3-color@npm:1 - 2":
   version: 2.0.0
   resolution: "d3-color@npm:2.0.0"
   checksum: b887354aa383937abd04fbffed3e26e5d6a788472cd3737fb10735930e427763e69fe93398663bccf88c0b53ee3e638ac6fcf0c02226b00ed9e4327c2dfbf3dc
+  languageName: node
+  linkType: hard
+
+"d3-color@npm:^3.1.0":
+  version: 3.1.0
+  resolution: "d3-color@npm:3.1.0"
+  checksum: 4931fbfda5d7c4b5cfa283a13c91a954f86e3b69d75ce588d06cde6c3628cebfc3af2069ccf225e982e8987c612aa7948b3932163ce15eb3c11cd7c003f3ee3b
   languageName: node
   linkType: hard
 
@@ -10386,7 +10377,7 @@ __metadata:
     "@babel/preset-env": 7.20.2
     "@babel/register": 7.21.0
     "@cypress/webpack-preprocessor": 5.17.0
-    "@swimlane/ngx-charts": 20.1.0
+    "@swimlane/ngx-charts": 20.1.2
     "@types/d3": 7.4.0
     "@types/d3-scale": 4.0.2
     "@types/file-saver": 2.0.5
@@ -14706,7 +14697,7 @@ __metadata:
 
 "typescript@patch:typescript@4.9.5#~builtin<compat/typescript>":
   version: 4.9.5
-  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=f456af"
+  resolution: "typescript@patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=701156"
   bin:
     tsc: bin/tsc
     tsserver: bin/tsserver
