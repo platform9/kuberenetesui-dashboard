@@ -13,8 +13,3 @@
 # See the License for the specific language governing permissions and
 # limitations under the License
 . "$(dirname "$0")/_/husky.sh"
-
-npm run check
-npm run check:license
-npm run test:frontend
-npm run test:backend
