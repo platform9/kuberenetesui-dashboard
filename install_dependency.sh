@@ -28,8 +28,9 @@ npm i bc
 
 export TERM=xterm-256color
 
-npm run clean
-export GOOS=linux
+npm run docker:build
 
-./aio/scripts/build.sh -c
+docker login
+docker tag kubernetesui/dashboard-amd64:v2.4.0-pmk docker.io/platform9/kubernetesui-dashboard:v2.4.0-pmk-$(TEAMCITY_BUILD_ID)
+docker push docker.io/platform9/kubernetesui-dashboard:v2.4.0-pmk-$(TEAMCITY_BUILD_ID)
 
