@@ -28,5 +28,8 @@ npm i bc
 
 export TERM=xterm-256color
 
+npm run clean
 export GOOS=linux
-./aio/scripts/build.sh
+
+./aio/scripts/build.sh -c
+
