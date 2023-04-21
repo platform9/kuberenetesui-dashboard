@@ -1,6 +1,6 @@
 registry_url = docker.io
 image_name = ${registry_url}/platform9/kubernetesui-dashboard
-DOCKERFILE?=$(CURDIR)/dist/amd64/Dockerfile
+DOCKERFILE?=$(CURDIR)/aio/develop/Dockerfile
 image_tag = v2.4.0-pmk-$(TEAMCITY_BUILD_ID)
 PF9_TAG=$(image_name):${image_tag}
 DOCKERARGS=
