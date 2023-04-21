@@ -22,12 +22,14 @@ npm --version
 
 node -v
 
+npm run clean
+
+npm rebuild node-sass
+
 npm ci
 
 npm i bc
 
 export TERM=xterm-256color
-
-npm rebuild node-sass
 
 npm run docker:build
