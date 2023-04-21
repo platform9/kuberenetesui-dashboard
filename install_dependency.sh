@@ -26,4 +26,5 @@ npm ci
 
 npm i bc
 
+export TERM=xterm-256color
 ./aio/scripts/build.sh
