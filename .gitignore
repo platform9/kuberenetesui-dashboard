@@ -13,7 +13,6 @@ vendor/
 .sass-cache/
 .tmp/
 .cached_tools/
-dist/
 coverage/
 cypress/screenshots
 cypress/videos
