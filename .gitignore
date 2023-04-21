@@ -12,6 +12,7 @@ vendor/
 .go_workspace/
 .sass-cache/
 .tmp/
+dist/
 .cached_tools/
 coverage/
 cypress/screenshots
