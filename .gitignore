@@ -11,6 +11,7 @@ vendor/
 # Build and test artifacts:
 .go_workspace/
 .sass-cache/
+dist/
 .tmp/
 .cached_tools/
 coverage/
