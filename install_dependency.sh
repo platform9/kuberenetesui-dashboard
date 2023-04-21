@@ -28,4 +28,5 @@ npm i bc
 
 export TERM=xterm-256color
 
+export GOOS=linux
 ./aio/scripts/build.sh
