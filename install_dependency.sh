@@ -28,4 +28,4 @@ npm i bc
 
 export TERM=xterm-256color
 
-npm run docker:build
+./aio/scripts/build.sh
