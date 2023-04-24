@@ -13,6 +13,7 @@ endif
 
 pf9-image: | $(CURDIR) ; $(info Building Docker image for pf9 Repo...) @ ## Build kubernetesui-dashboard docker image
 	pushd $(CURDIR)/dist/amd64 || exit
+	pwd
 	docker build -t $(PF9_TAG) -f $(DOCKERFILE)  $(CURDIR) $(DOCKERARGS)
 	echo ${PF9_TAG} > $(CURDIR)/dist/amd64/container-tag
 	popd || exit
