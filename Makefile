@@ -1,3 +1,4 @@
+SHELL=/bin/bash
 registry_url = docker.io
 image_name = ${registry_url}/platform9/kubernetesui-dashboard
 DIST_DIR = $(CURDIR)/dist/amd64
@@ -14,8 +15,8 @@ endif
 
 pf9-image:
 	$(info Building Docker image for pf9 Repo...) @ ## Build kubernetesui-dashboard docker image
+	pushd $(DIST_DIR) || exit
 	pwd
-	pushd $(DIST_DIR)
 	docker build -t $(PF9_TAG) -f $(DOCKERFILE) . $(DOCKERARGS)
 	echo ${PF9_TAG} > $(CURDIR)/dist/amd64/container-tag
 	popd || exit
