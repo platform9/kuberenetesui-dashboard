@@ -12,10 +12,12 @@ ifdef HTTPS_PROXY
 endif
 
 pf9-image: | $(CURDIR) ; $(info Building Docker image for pf9 Repo...) @ ## Build kubernetesui-dashboard docker image
-	@docker build -t $(PF9_TAG) -f $(DOCKERFILE)  $(CURDIR) $(DOCKERARGS)
+	pushd $(CURDIR)/dist
+	docker build -t $(PF9_TAG) -f $(DOCKERFILE)  $(CURDIR) $(DOCKERARGS)
 	echo ${PF9_TAG} > $(CURDIR)/dist/amd64/container-tag
+	popd || exit
 
-pf9-push: 
+pf9-push:
 	docker login
 	docker push $(PF9_TAG)\
 	&& docker rmi $(PF9_TAG)
